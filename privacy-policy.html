@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Kahoot Bot Extension</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap');
+
+  :root {
+    --bg: #0f0f0f;
+    --surface: #161616;
+    --border: #2a2a2a;
+    --text: #e8e8e8;
+    --muted: #666;
+    --accent: #00e676;
+    --accent-dim: rgba(0,230,118,0.08);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* Header */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 28px 0;
+    background: var(--surface);
+  }
+  .header-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .logo-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+    flex-shrink: 0;
+  }
+  .ext-name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* Main */
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 32px 80px;
+  }
+
+  h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(22px, 4vw, 30px);
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .summary-box {
+    background: var(--accent-dim);
+    border: 1px solid rgba(0,230,118,0.2);
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin-bottom: 48px;
+    font-size: 14px;
+    color: #b0f0c8;
+    line-height: 1.6;
+  }
+  .summary-box strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  p {
+    font-size: 15px;
+    color: #c8c8c8;
+    margin-bottom: 12px;
+    font-weight: 300;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+  ul li {
+    font-size: 15px;
+    color: #c8c8c8;
+    font-weight: 300;
+    padding: 6px 0 6px 20px;
+    position: relative;
+  }
+  ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .permission-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  .permission-table th {
+    text-align: left;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 400;
+  }
+  .permission-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    color: #c8c8c8;
+    vertical-align: top;
+    font-weight: 300;
+  }
+  .permission-table td:first-child {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+    white-space: nowrap;
+  }
+  .permission-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 24px 32px;
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-dot"></div>
+    <span class="ext-name">Kahoot Bot — Chrome Extension</span>
+  </div>
+</header>
+
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Last updated: April 2025 &nbsp;·&nbsp; Version 1.0</p>
+
+  <div class="summary-box">
+    <strong>Short version:</strong> This extension does not collect, store, transmit, or share any personal data. All processing happens locally in your browser. No analytics, no tracking, no servers owned by this extension.
+  </div>
+
+  <section>
+    <h2>What this extension does</h2>
+    <p>Kahoot Bot is a browser extension that automatically detects quiz questions on <strong>kahoot.it</strong> and interacts with the page on your behalf using the Chrome DevTools Protocol (CDP). It uses an external AI API (Groq) solely to determine the correct answer to display.</p>
+  </section>
+
+  <section>
+    <h2>Data we do NOT collect</h2>
+    <ul>
+      <li>No personal information (name, email, account credentials)</li>
+      <li>No browsing history outside of kahoot.it</li>
+      <li>No keystroke logging or clipboard data stored</li>
+      <li>No analytics, telemetry, or usage statistics</li>
+      <li>No cookies set by this extension</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Data sent to third-party APIs</h2>
+    <p>When a question is detected on kahoot.it, the extension sends the following to the <strong>Groq API</strong> (api.groq.com) to obtain an answer:</p>
+    <ul>
+      <li>The text of the quiz question currently displayed on screen</li>
+      <li>The text of the available answer options</li>
+      <li>Optionally, the URL of an image embedded in the question</li>
+    </ul>
+    <p>This data is used only to generate a response and is subject to <a href="https://groq.com/privacy-policy/" style="color:var(--accent)">Groq's own Privacy Policy</a>. No personal identifiers are included in these requests.</p>
+  </section>
+
+  <section>
+    <h2>Permissions used and why</h2>
+    <table class="permission-table">
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Reason</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>debugger</td>
+          <td>Required to dispatch trusted mouse and keyboard events via Chrome DevTools Protocol so that clicks register as real user input on kahoot.it.</td>
+        </tr>
+        <tr>
+          <td>tabs</td>
+          <td>Used to identify the active tab ID in order to attach the debugger to the correct tab.</td>
+        </tr>
+        <tr>
+          <td>activeTab</td>
+          <td>Limits extension access to only the tab the user is currently viewing.</td>
+        </tr>
+        <tr>
+          <td>scripting</td>
+          <td>Used to inject the content script into kahoot.it pages.</td>
+        </tr>
+        <tr>
+          <td>storage</td>
+          <td>Reserved for storing user preferences locally in the browser. No data is sent externally.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Local storage</h2>
+    <p>The extension may use <code style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--accent)">chrome.storage.local</code> to save configuration preferences (such as whether the bot is enabled). This data never leaves your device.</p>
+  </section>
+
+  <section>
+    <h2>Children's privacy</h2>
+    <p>This extension is not directed at children under the age of 13. We do not knowingly collect any information from children.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If this policy is updated, the "Last updated" date at the top of this page will reflect the change. Continued use of the extension after any changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, you can open an issue on the extension's repository or contact the developer directly through the Chrome Web Store listing.</p>
+  </section>
+</main>
+
+<footer>
+  Kahoot Bot Extension &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; No data collected
+</footer>
+
+</body>
+</html>
